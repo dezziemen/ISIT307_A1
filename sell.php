@@ -97,8 +97,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 function saveToFile($name, $phone, $email, $product, $type, $brand, $char, $condition, $description) {
     $sep = ",";
     $dataArray = array($name, $phone, $email, $product, $type, $brand, $char, $condition, $description);
-    $data = implode(",", $dataArray);
-    $data .= "\n";
+    $data = implode(",", $dataArray) . "\n";
     echo $data;
 
     $savefile = fopen("ShoesSale.txt", "a") or die("Can't create file");

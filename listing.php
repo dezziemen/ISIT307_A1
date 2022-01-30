@@ -12,13 +12,14 @@
     $searchError = "";
     if (!empty($_GET['search'])) {
         $query = htmlspecialchars($_GET['search']);
-        $readfile = fopen("ShoesSale.txt", "r") or die("File does not exist");
-        while(($line = fgets($readfile)) !== false) {
+        $readFile = fopen("ShoesSale.txt", "r") or die("File does not exist");
+        while(($line = fgets($readFile)) !== false) {
             $allData = explode(",", $line);
             if($query == $allData[3]) {
                 echo $query . " found: " . $allData[3];
-                fclose($readfile);
-                return;
+                fclose($readFile);
+                Header("Location: details.php?product_num=" . $query);
+                exit();
             }
         }
         $searchError = $query . " does not exist.";
@@ -40,8 +41,8 @@
             <th>Description</th>
         </tr>
         <?php
-            $readfile = fopen("ShoesSale.txt", "r") or die("File does not exist");
-            while(($line = fgets($readfile)) !== false) {
+            $readFile = fopen("ShoesSale.txt", "r") or die("File does not exist");
+            while(($line = fgets($readFile)) !== false) {
                 $allData = explode(",", $line);
                 echo "<tr>";
                 foreach($allData as $data) {
@@ -49,7 +50,7 @@
                 }
                 echo "</tr>";
             }
-            fclose($readfile);
+            fclose($readFile);
         ?>
     </table>
 </body>

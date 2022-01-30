@@ -10,7 +10,7 @@
 <body>
 <div>
     <a href="sell.php">Sell</a>
-    <a href="buy.php">Buy</a>
+    <a href="listing.php">Buy</a>
 </div>
 <?php
 
