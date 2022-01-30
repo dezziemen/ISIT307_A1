@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Shoes Fever: Sell</title>
+</head>
+<body>
+  <div id="main_div" class="container">
+      <form action="sell.php" method="post">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Name">
+        <div class="error_msg" id="name_error_msg"><?php echo $nameErr;?></div>
+        <label for="phone">Phone</label>
+        <input type="text" name="phone" id="phone" placeholder="Phone">
+        <div class="error_msg" id="phone_error_msg"><?php echo $phoneErr;?></div>
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" placeholder="Email">
+        <div class="error_msg" id="email_error_msg"><?php echo $emailErr;?></div>
+        <hr>
+        <label for="product_num">Product Number</label>
+        <input type="text" name="product_num" id="product_num" placeholder="Product Number">
+        <div class="error_msg" id="product_num_error_msg"><?php echo $productErr;?></div>
+        <label for="type">Type</label>
+        <input type="text" name="type" id="type" placeholder="Type">
+        <div class="error_msg" id="type_error_msg"><?php echo $typeErr;?></div>
+        <label for="brand">Brand</label>
+        <input type="text" name="brand" id="brand" placeholder="Brand">
+        <div class="error_msg" id="brand_error_msg"><?php echo $brandErr;?></div>
+        <hr>
+        <label for="char">Characteristics</label>
+        <input type="text" name="char" id="char" placeholder="Characteristics">
+        <div class="error_msg" id="char_error_msg"><?php echo $charErr;?></div>
+        <label for="condition">Condition</label>
+        <input type="text" name="condition" id="condition" placeholder="Condition">
+        <div class="error_msg" id="condition_error_msg"><?php echo $conditionErr;?></div>
+        <label for="description">Description</label>
+        <input type="text" name="description" id="description" placeholder="Description">
+        <div class="error_msg" id="description_error_msg"><?php echo $descriptionErr;?></div>
+        <hr>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+</html>
