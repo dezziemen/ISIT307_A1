@@ -8,6 +8,7 @@
     <title>Listing</title>
 </head>
 <body>
+    <h1>All listings</h1>
     <?php
     $searchError = "";
     if (!empty($_GET['search'])) {

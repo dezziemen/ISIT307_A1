@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1>Details of shoes</h1>
     <div class="container">
         <?php
             if(isset($_GET['product_num'])) {
@@ -16,7 +17,6 @@
                 while(($line = fgets($readFile)) !== false) {
                     $allData = explode(",", $line);
                     if($query == $allData[3]) {
-                        echo $query . " found: " . $allData[3];
                         fclose($readFile);
 
                         $countInterest = 0;
@@ -31,7 +31,6 @@
 
                         echo '
                             <form action="expInterest.php?product_num=' . $allData[3] . '" method="get">
-                                <h1>Details of shoes</h1>
                                 <label for="product_num">Product Number</label>
                                 <input type="text" name="product_num" value="' . $allData[3] . '" readonly>
                                 <label for="type">Type</label>
