@@ -1,3 +1,5 @@
 pn,buyer1,phone1,email1,69
 pn,name1,phone1,email1,price1
 pn,name,phone,email,69
+c6969,arthur,777,arthur email,3000
+,buyer2,phone2,email2,444

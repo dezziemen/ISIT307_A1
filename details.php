@@ -30,7 +30,7 @@
                         fclose($readInterest);
 
                         echo '
-                            <form action="expInterest.php?' . $allData[3] . '" method="get">
+                            <form action="expInterest.php?product_num=' . $allData[3] . '" method="get">
                                 <h1>Details of shoes</h1>
                                 <label for="product_num">Product Number</label>
                                 <input type="text" name="product_num" value="' . $allData[3] . '" readonly>

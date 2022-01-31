@@ -1,1 +1,3 @@
 name,phone,email,pn,t,b,char,cond,desc
+john,999,john email,c6969,slides,champion,cool,new,black and white
+Desmond,94255864,poonweijun@gmail.com,31-01-22-mad,Sneakers,Achachas,Red and white stripes,Like new,Worn once Achachas hype sneakers.
